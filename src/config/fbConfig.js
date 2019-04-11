@@ -11,7 +11,9 @@ var config = {
   storageBucket: "react-firebase-ccfc7.appspot.com",
   messagingSenderId: "179616419637"
 };
+
 firebase.initializeApp(config);
-firebase.firestore().settings({ timestampsInSnapshots: true });
+firebase.firestore();
+//firebase.firestore().settings({ timestampsInSnapshots: true });
 
 export default firebase;
