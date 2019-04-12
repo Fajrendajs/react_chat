@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { NavBar } from "./components/layout/Navbar";
+import NavBar from "./components/layout/Navbar";
 import Dashboard from "./components/dashboard/Dashboard";
-import { ProjecDetails } from "./components/projects/ProjectDetails";
-import { SignIn } from "./components/auth/SignIn";
-import { SignUp } from "./components/auth/SignUp";
+import ProjecDetails from "./components/projects/ProjectDetails";
+import SignIn from "./components/auth/SignIn";
+import SignUp from "./components/auth/SignUp";
 import CreateProject from "./components/projects/CreateProject";
 
 class App extends Component {
