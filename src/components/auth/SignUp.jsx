@@ -17,6 +17,7 @@ export class SignUp extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    this.props.signUp();
   };
   render() {
     const { auth } = this.props;
@@ -60,7 +61,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    signIn: creds => dispatch(signIn(creds))
+    signUp: newUser => dispatch(signUp(newUser))
   };
 };
 
